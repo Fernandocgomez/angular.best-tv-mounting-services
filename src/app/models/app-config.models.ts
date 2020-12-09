@@ -1,3 +1,3 @@
 export abstract class AppConfig {
-    API_BASE_URL: string;
+    API_BASE_URL?: string;
 }
