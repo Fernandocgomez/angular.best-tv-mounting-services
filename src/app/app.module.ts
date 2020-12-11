@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 // Components
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeroComponent } from './components/hero/hero.component';
 // Services
 import { ConfigService } from './services/config.service';
 // Models
@@ -18,7 +21,10 @@ export function initializerFn(configService: ConfigService) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
