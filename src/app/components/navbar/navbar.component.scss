@@ -6,19 +6,32 @@ $white: #ffffff;
 $text: #000;
 $darker-gary: #7d7d7d;
 
-
-
 img {
-    height: 3rem;
+  height: 2.5rem;
 }
 
 nav {
-    // border-bottom: 1px solid $darker-gary;
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-
-span { 
-    padding-left: 5px;
+span {
+  padding-left: 5px;
 }
 
+.navbar-toggler {
+  color: transparent;
+}
+
+.fa-bars {
+  color: $white;
+}
+
+.navbar-collapse {
+  width: auto;
+}
+
+@media only screen and (max-device-width: 818px) {
+  .navbar-collapse {
+    width: 100%;
+  }
+}

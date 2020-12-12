@@ -58,40 +58,41 @@ header {
 // }
 
 .input-group {
-    button {
-        background-color: $primary;
-        color: $white;
-        border-radius: 0px 2rem 2rem 0;
-        height: 4rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+  button {
+    background-color: $primary;
+    color: $white;
+    border-radius: 0px 2rem 2rem 0;
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-    
-        &:hover {
-          background-color: $secondary-darker;
-          color: $white;
-        }
+    &:hover {
+      background-color: $secondary-darker;
+      color: $white;
     }
-    
-    
-    input {
-        height: 4rem;
-        border-radius: 2rem;
-        border-left: none;
-        border-right: none;
-        padding-left: 0;
-        padding-right: 0;
+  }
 
-    }
-    
-    span {
-        background-color: $white;
-        border-radius: 2rem 0 0 2rem;
-        height: 4rem;
+  input {
+    height: 4rem;
+    border-radius: 2rem;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    }
-
-
+  span {
+    background-color: $white;
+    border-radius: 2rem 0 0 2rem;
+    height: 4rem;
+  }
 }
 
-
+@media only screen and (min-device-width: 280px) and (max-device-width: 736px) {
+  .w-50 {
+    width: 100% !important;
+  }
+  .pt-8 {
+    padding-top: 5rem !important;
+  }
+}
