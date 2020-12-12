@@ -98,6 +98,48 @@ header {
   }
 }
 
+@media only screen and (min-device-width: 280px) and (max-device-width: 414px) {
+  video {
+    top: 24% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  .pt-8 {
+    padding-top: 17rem !important;
+  }
+
+  .overlay {
+    opacity: 0 !important;
+  }
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 360px) {
+  video {
+    top: 24% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  .pt-8 {
+    padding-top: 15rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 320px) {
+  video {
+    top: 24% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  .pt-8 {
+    padding-top: 12rem !important;
+  }
+}
+
+
 .form-text {
   padding-left: 2rem;
 
