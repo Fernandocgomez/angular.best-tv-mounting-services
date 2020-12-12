@@ -81,10 +81,11 @@ header {
     padding-right: 0;
   }
 
-  span {
+  .input-group-text {
     background-color: $white;
     border-radius: 2rem 0 0 2rem;
     height: 4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -94,5 +95,13 @@ header {
   }
   .pt-8 {
     padding-top: 5rem !important;
+  }
+}
+
+.form-text {
+  padding-left: 2rem;
+
+  span {
+    font-weight: bolder;
   }
 }
