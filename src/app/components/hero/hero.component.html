@@ -7,24 +7,37 @@
         <app-navbar></app-navbar>
         <div class="d-flex h-100 text-center align-items-top pt-8">
             <div class="w-100 text-white">
-                <h1 class="display-3 font-weight-500">TV MOUNTING INSTALLATION</h1>
-                <p class="lead mb-3">Compare prices & installation costs. Find best deals and compare for free
-                    right now!</p>
-                <div class="input-group mb-3 w-50 mx-auto">
+                <h1 class="display-3 font-weight-500" [innerHTML]="heading"></h1>
+                <p class="lead mb-3" [innerHTML]="subHeading"></p>    
+                <form class="input-group mb-3 w-50 mx-auto" name="form" [formGroup]="form">
                     <div class="input-group-prepend d-flex">
-                        <span class="input-group-text">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <span 
+                            class="input-group-text" 
+                            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }">
+                                <i class="fas fa-map-marker-alt"></i>
                         </span>
                     </div>
-                    <input type="text" class="form-control shadow-none" placeholder="Zip Code"
-                        aria-describedby="basic-addon2">
+                    <input 
+                        type="text" 
+                        class="form-control shadow-none" 
+                        placeholder="Zip Code"
+                        aria-describedby="basic-addon2"
+                        formControlName="zipCode"
+                        [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
+                    >
                     <div class="input-group-append">
-                        <button class="btn shadow-none" type="button">Get Started</button>
+                        <button 
+                            class="btn shadow-none" 
+                            type="button"
+                            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
+                            [disabled]="form.get('zipCode')!.invalid"
+                            [innerHTML]="btnText"
+                            >
+                        </button>
                     </div>
-                    <div class="form-text text-white text-start container">
-                        Top <span>Texas</span> Tv Mounting Contractors
+                    <div class="form-text text-white text-start container" [innerHTML]="inputDisclaimer">
                     </div>
-                </div>
+                </form>  
             </div>
         </div>
     </div>

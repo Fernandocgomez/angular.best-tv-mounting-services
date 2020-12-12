@@ -142,8 +142,13 @@ header {
 
 .form-text {
   padding-left: 2rem;
+}
 
-  span {
-    font-weight: bolder;
-  }
+.is-invalid {
+  border-color: #dc3545;
+  border-left: none;
+}
+
+.btn:disabled {
+  opacity: 1;
 }
