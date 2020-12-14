@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // Private methods
+  // Private properties
 
-  // Public methods
+  // Public properties
   constructor() { }
 
   // Life cycle methods
   ngOnInit(): void {
   }
+
+  // Private methods
+
+  // Public methods
 
 }

@@ -7,7 +7,7 @@ $text: #000;
 $darker-gary: #7d7d7d;
 
 img {
-  height: 2rem;
+  height: 3.5rem;
 }
 
 nav {
@@ -34,4 +34,66 @@ span {
   .navbar-collapse {
     width: 100%;
   }
+}
+
+
+// **********MEDIA QUERIES***********
+
+// Galaxy fold
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// IPhone 5/SE
+@media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// Galaxy S5 & Motorola G4
+@media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
+  img {
+    height: 2.5rem !important;
+  }
+}
+
+// IPhone 6/7/8 & IPhone X
+@media only screen and (min-device-width: 375px) and (max-device-width: 410px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// Pixel 2 & Pixel 2XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// IPhone 6/7/8 Plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 539px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// Surface Duo
+@media only screen and (min-device-width: 540px) and (max-device-width: 767px) {
+  img {
+    height: 3rem !important;
+  }
+}
+
+// IPad 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+
+}
+
+// IPad 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
+
 }
