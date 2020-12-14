@@ -1,22 +1,25 @@
 <nav class="navbar navbar-light navbar-expand-lg">
   <div class="container">
-    <img class="navbar-brand" src="../assets/logo.png" />
+    <img class="navbar-brand" [src]="logo" />
     <button 
       class="navbar-toggler" 
       type="button" 
       data-bs-toggle="collapse" 
-      data-bs-target="#navbarTogglerDemo02" 
-      aria-controls="navbarTogglerDemo02" 
+      data-bs-target="#navbarToggler" 
+      aria-controls="navbarToggler" 
       aria-expanded="false" 
       aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarToggler">
       <div class="d-flex">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#">Join as a pro<span><i class="fas fa-hard-hat"></i></span></a>
+            <a 
+              class="nav-link text-white" 
+              routerLink="/join-as-a-pro"
+              [innerHTML]="joinAsAPro"></a>
           </li>
         </ul>
       </div>

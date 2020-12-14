@@ -1,11 +1,11 @@
 <header>
     <div class="overlay"></div>
-    <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="../../../assets/hero-video.mp4" type="video/mp4">
+    <video loop muted autoplay="autoplay" playsinline oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source [src]="video" type="video/mp4">
     </video>
     <div class="container h-100">
         <app-navbar></app-navbar>
-        <div class="d-flex h-100 text-center align-items-top pt-8">
+        <div class="d-flex h-100 text-center align-items-top pt-6">
             <div class="w-100 text-white">
                 <h1 class="display-3 font-weight-500" [innerHTML]="heading"></h1>
                 <p class="lead mb-3" [innerHTML]="subHeading"></p>    
@@ -20,8 +20,7 @@
                     <input 
                         type="text" 
                         class="form-control shadow-none" 
-                        placeholder="Zip Code"
-                        aria-describedby="basic-addon2"
+                        [placeholder]="zipCodePlaceHolder"
                         formControlName="zipCode"
                         [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
                     >
