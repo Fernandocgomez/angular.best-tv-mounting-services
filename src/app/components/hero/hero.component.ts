@@ -17,7 +17,7 @@ export class HeroComponent implements OnInit {
   public subHeading: string = 'Compare prices & installation costs. Find best deals and compare for free right now!';
   public btnText: string = 'Get Started';
   public inputDisclaimer: string = 'Top Texas Tv Mounting Contractors';
-  public video: string = "../../../assets/hero-video.mp4";
+  public video: string = "../../../assets/video.mp4";
   public zipCodePlaceHolder: string= "Zip Code";
   // Reactive forms
   public form = new FormGroup({
