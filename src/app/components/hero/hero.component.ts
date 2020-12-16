@@ -13,10 +13,10 @@ export class HeroComponent implements OnInit {
   private ZipCodeRequired: boolean = true;
 
   // Public properties
-  public heading: string = 'TV MOUNTING INSTALLATION';
-  public subHeading: string = 'Compare prices & installation costs. Find best deals and compare for free right now!';
+  public heading: string = 'Hire a top-rated tv mounting specialist';
+  public subHeading: string = 'Find the best deals and compare for free!';
   public btnText: string = 'Get Started';
-  public inputDisclaimer: string = 'Top Texas Tv Mounting Contractors';
+  public inputDisclaimer: string = 'Top Best Texas Tv Mounting Contractors';
   public video: string = "../../../assets/video.mp4";
   public zipCodePlaceHolder: string= "Zip Code";
   // Reactive forms

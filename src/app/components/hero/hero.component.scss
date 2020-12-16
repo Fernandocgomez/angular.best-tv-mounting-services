@@ -97,7 +97,7 @@ header {
 // Galaxy fold
 @media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
   video {
-    top: 24% !important;
+    top: 23% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
@@ -147,12 +147,20 @@ header {
     padding-left: 2rem !important;
   }
 
+  .display-3 {
+    font-size: calc(1.525rem + 2.3vw) !important;
+  }
+
+  .form-text {
+    font-size: small !important;
+  }
+
 }
 
 // Galaxy S5 & Motorola G4
 @media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
   video {
-    top: 28% !important;
+    top: 26% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
@@ -199,10 +207,17 @@ header {
   }
 }
 
+// IPhone X 
+@media only screen and (min-device-height: 812px) and (max-device-height: 812px) {
+  video {
+    top: 22% !important;
+  }
+}
+
 // Pixel 2 & Pixel 2XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
   video {
-    top: 27% !important;
+    top: 26% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
@@ -221,6 +236,13 @@ header {
 
   button {
     padding-left: 2rem !important;
+  }
+}
+
+// Pixel 2XL
+@media only screen and (min-device-height: 823px) and (max-device-height: 823px) {
+  video {
+    top: 23% !important;
   }
 }
 
@@ -300,13 +322,17 @@ header {
     font-size: medium;
     padding-left: 3rem;
   }
+
+  video {
+    top: 50% !important;
+  }
+
 }
 
 // IPad pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
   .pt-6 {
-    padding-top: 15
-    rem !important;
+    padding-top: 15rem !important;
   }
 
   form {

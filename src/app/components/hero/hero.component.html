@@ -7,8 +7,8 @@
         <app-navbar></app-navbar>
         <div class="d-flex h-100 text-center align-items-top pt-6">
             <div class="w-100 text-white">
-                <h1 class="display-3 font-weight-500" [innerHTML]="heading"></h1>
-                <p class="lead mb-3" [innerHTML]="subHeading"></p>    
+                <h1 class="display-3 font-weight-500 text-capitalize" [innerHTML]="heading"></h1>
+                <p class="lead mb-3 text-capitalize" [innerHTML]="subHeading"></p>    
                 <form class="input-group mb-3 w-50 mx-auto" name="form" [formGroup]="form">
                     <div class="input-group-prepend d-flex">
                         <span 
@@ -34,7 +34,7 @@
                             >
                         </button>
                     </div>
-                    <div class="form-text text-white text-start container" [innerHTML]="inputDisclaimer">
+                    <div class="form-text text-white text-start container text-capitalize" [innerHTML]="inputDisclaimer">
                     </div>
                 </form>  
             </div>
