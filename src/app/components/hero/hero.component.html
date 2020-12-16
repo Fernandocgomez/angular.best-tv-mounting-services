@@ -7,7 +7,7 @@
         <app-navbar></app-navbar>
         <div class="d-flex h-100 text-center align-items-top pt-6">
             <div class="w-100 text-white">
-                <h1 class="display-3 font-weight-500" [innerHTML]="heading"></h1>
+                <h1 class="display-3 font-weight-500" [innerHTML]="heading.toUpperCase()"></h1>
                 <p class="lead mb-3" [innerHTML]="subHeading"></p>    
                 <form class="input-group mb-3 w-50 mx-auto" name="form" [formGroup]="form">
                     <div class="input-group-prepend d-flex">
