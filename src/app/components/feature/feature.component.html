@@ -2,76 +2,19 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <span class="separator">Features</span>
+                <span class="separator" [innerHTML]="heading"></span>
             </div>
         </div>
-        <div class="row text-center pt-5 pb-5">
-            <div class="col-md-4">
+        <div class="row text-center pt-5 pb-5" *ngIf="featureSectionData">
+            <div class="col-md-4" *ngFor="let featureItem of featureSectionData;">
                 <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
+                    <img [src]="featureItem.icon" [alt]="featureItem.alt || ''">
                 </div>
                 <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">Find Top Contractors</p>
+                    <p class="text-capitalize fs-5 fw-bold heading" [innerHTML]="featureItem.heading"></p>
                 </div>
                 <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
-                </div>
-                <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">Compare Prices</p>
-                </div>
-                <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
-                </div>
-                <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">100% Free Quote</p>
-                </div>
-                <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center pb-5">
-            <div class="col-md-4">
-                <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
-                </div>
-                <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">Quality</p>
-                </div>
-                <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
-                </div>
-                <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">Pay Less</p>
-                </div>
-                <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="col p-4">
-                    <img src="../../../assets/3.svg" alt="feature-icon">
-                </div>
-                <div class="col">
-                    <p class="text-capitalize fs-5 fw-bold heading">Feedback</p>
-                </div>
-                <div class="col">
-                    <p class="sub-heading">Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.</p>
+                    <p class="sub-heading" [innerHTML]="featureItem.subHeading"></p>
                 </div>
             </div>
         </div>

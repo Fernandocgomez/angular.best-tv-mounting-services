@@ -14,7 +14,7 @@ header {
   width: 100%;
   overflow: hidden;
 
-  video {
+  img, video  {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,8 +102,14 @@ header {
     width: 0% !important;
   }
 
+  img {
+    top: 23% !important;
+    min-height: 10% !important;
+    width: 0% !important;
+  }
+
   .pt-6 {
-    padding-top: 10rem !important;
+    padding-top: 12rem !important;
   }
 
   .overlay {
@@ -128,6 +134,12 @@ header {
   video {
     top: 28% !important;
     min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  img {
+    top: 18% !important;
+    min-height: 40% !important;
     width: 0% !important;
   }
 
@@ -165,6 +177,12 @@ header {
     width: 0% !important;
   }
 
+  img {
+    top: 18% !important;
+    min-height: 40% !important;
+    width: 0% !important;
+  }
+
   .pt-6 {
     padding-top: 14rem !important;
   }
@@ -190,8 +208,14 @@ header {
     width: 0% !important;
   }
 
+  img {
+    top: 18% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
   .pt-6 {
-    padding-top: 15rem !important;
+    padding-top: 16.5rem !important;
   }
 
   .overlay {
@@ -211,13 +235,28 @@ header {
 @media only screen and (min-device-height: 812px) and (max-device-height: 812px) {
   video {
     top: 22% !important;
+    min-height: 50% !important;
   }
+
+  img {
+    top: 15% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+
 }
 
 // Pixel 2 & Pixel 2XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
   video {
     top: 26% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  img {
+    top: 18% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
@@ -244,12 +283,23 @@ header {
   video {
     top: 23% !important;
   }
+
+  img {
+    top: 16% !important;
+  }
+
 }
 
 // IPhone 6/7/8 Plus
 @media only screen and (min-device-width: 414px) and (max-device-width: 539px) {
   video {
     top: 27% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  img {
+    top: 18% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
@@ -275,6 +325,12 @@ header {
 @media only screen and (min-device-width: 540px) and (max-device-width: 767px) {
   video {
     top: 32% !important;
+    min-height: 50% !important;
+    width: 0% !important;
+  }
+
+  img {
+    top: 24% !important;
     min-height: 50% !important;
     width: 0% !important;
   }
