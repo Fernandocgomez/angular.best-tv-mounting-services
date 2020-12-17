@@ -1,6 +1,8 @@
 // Angular module
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+// Models
+import { HeroSection } from './../../models/hero-section.model';
 
 @Component({
   selector: 'app-hero',
@@ -10,19 +12,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class HeroComponent implements OnInit {
   // Private properties
   private zipCodeRegExp: RegExp = /^\d{5}(?:[-\s]\d{4})?$/;
-  private ZipCodeRequired: boolean = true;
-
+  
   // Public properties
-  public heading: string = 'Hire a top-rated tv mounting specialist';
-  public subHeading: string = 'Find the best deals and compare for free!';
-  public btnText: string = 'Get Started';
-  public inputDisclaimer: string = 'Top Best Texas Tv Mounting Contractors';
-  public video: string = "../../../assets/video.mp4";
-  public zipCodePlaceHolder: string= "Zip Code";
+  @Input() public heroSectionData?: HeroSection;
+  
   // Reactive forms
   public form = new FormGroup({
     zipCode: new FormControl('', [
-      this.ZipCodeRequired ? Validators.required : Validators.nullValidator,
+      Validators.required,
       Validators.pattern(this.zipCodeRegExp),
     ]),
   });
@@ -31,7 +28,6 @@ export class HeroComponent implements OnInit {
 
   // Life cycle methods
   ngOnInit(): void {
-    console.log();
   }
 
   // Private methods

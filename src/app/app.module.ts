@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
 // Services
 import { ConfigService } from './services/config.service';
+import { HomeService } from './services/home.service';
 // Models
 import { AppConfig } from './models/app-config.models';
 import { FeatureComponent } from './components/feature/feature.component';
@@ -47,7 +48,8 @@ export function initializerFn(configService: ConfigService) {
       multi: true,
       deps: [ConfigService],
       useFactory: initializerFn
-    }
+    },
+    HomeService,
   ],
   bootstrap: [AppComponent]
 })
