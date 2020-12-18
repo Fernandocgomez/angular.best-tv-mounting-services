@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
   // Private properties
 
   // Public properties
-  public logo: string = "../assets/logo.svg";
+  public logo: string = "../assets/static/logo.svg";
   public joinAsAPro: string = `Join as a pro &nbsp;&nbsp;<span><i class="fas fa-hard-hat"></i></span>`;
 
   constructor() { }
