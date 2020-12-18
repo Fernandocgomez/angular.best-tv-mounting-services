@@ -13,7 +13,7 @@ export class HomeService {
     'Get Started',
     'Top Best Texas Tv Mounting Contractors',
     true,
-    "../../../assets/home/hero-section/video.mp4",
+    "../../../assets/static/home/hero-section/video.mp4",
     undefined,
     "Zip Code"
   );
@@ -22,37 +22,37 @@ export class HomeService {
     new FeatureSection(
       "Find Top Contractors",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/find-top-contractors.svg",
+      "../../../assets/static/home/feature-section/find-top-contractors.svg",
       "Feature icon"
     ),
     new FeatureSection(
       "Compare Prices",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/compare-prices.svg",
+      "../../../assets/static/home/feature-section/compare-prices.svg",
       "Feature icon"
     ),
     new FeatureSection(
       "100% Free Quote",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/100-free-quote.svg",
+      "../../../assets/static/home/feature-section/100-free-quote.svg",
       "Feature icon"
     ),
     new FeatureSection(
       "Quality",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/quality.svg",
+      "../../../assets/static/home/feature-section/quality.svg",
       "Feature icon"
     ),
     new FeatureSection(
       "Pay Less",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/pay-less.svg",
+      "../../../assets/static/home/feature-section/pay-less.svg",
       "Feature icon"
     ),
     new FeatureSection(
       "Feedback",
       "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
-      "../../../assets/home/feature-section/feedback.svg",
+      "../../../assets/static/home/feature-section/feedback.svg",
       "Feature icon"
     )
   ];

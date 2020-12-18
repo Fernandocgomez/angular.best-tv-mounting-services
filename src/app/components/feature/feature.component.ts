@@ -14,6 +14,7 @@ export class FeatureComponent implements OnInit {
   // Public properties
   public heading: string = "Features";
   @Input() public featureSectionData?: Array<FeatureSection>;
+  
   constructor() { }
 
   // Life cycle methods
