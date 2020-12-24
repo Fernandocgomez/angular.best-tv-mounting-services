@@ -71,7 +71,7 @@ export class HomeService {
       backgroundAttachment: "fixed",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundSize: "100%",
     }
   )
 
