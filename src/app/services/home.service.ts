@@ -67,11 +67,11 @@ export class HomeService {
     "Lorem ipsum dolor sit", 
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi, consequuntur ex", 
     {
-      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg.jpg')`,
+      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg4.jpg')`,
       backgroundAttachment: "fixed",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "100%",
+      backgroundSize: "cover",
     }
   )
 
