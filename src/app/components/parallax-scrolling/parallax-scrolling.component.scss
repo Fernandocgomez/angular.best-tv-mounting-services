@@ -6,93 +6,79 @@ $white: #ffffff;
 $text: #000;
 $darker-gary: #7d7d7d;
 
-img {
-  height: 3.5rem;
-}
-
-nav {
-  background-color: transparent !important;
-}
-
-span {
-  padding-left: 5px;
-}
-
-.navbar-toggler {
-  color: transparent;
-}
-
-.fa-bars {
-  color: $white;
-}
-
-.navbar-collapse {
-  width: auto;
-}
-
-@media only screen and (max-device-width: 818px) {
-  .navbar-collapse {
-    width: 100%;
-  }
+.wtitle {
+    padding: 200px 20px;
 }
 
 // **********MEDIA QUERIES***********
 
 // Galaxy fold
 @media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
 }
-
 // IPhone 5/SE
 @media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
 }
 
 // Galaxy S5 & Motorola G4
 @media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
-  img {
-    height: 2.5rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
 }
 
 // IPhone 6/7/8 & IPhone X
 @media only screen and (min-device-width: 375px) and (max-device-width: 410px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
+}
+
+// IPhone X
+@media only screen and (min-device-height: 812px) and (max-device-height: 812px) {
+
 }
 
 // Pixel 2 & Pixel 2XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
+}
+
+// Pixel 2XL
+@media only screen and (min-device-height: 823px) and (max-device-height: 823px) {
 }
 
 // IPhone 6/7/8 Plus
 @media only screen and (min-device-width: 414px) and (max-device-width: 539px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
 }
 
 // Surface Duo
 @media only screen and (min-device-width: 540px) and (max-device-width: 767px) {
-  img {
-    height: 3rem !important;
-  }
+    .wtitle {
+        padding: 100px 0px;
+    }
 }
 
-// IPad 
+// IPad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-
+    .wtitle {
+        padding: 125px 0px;
+    }
 }
 
-// IPad 
+// IPad pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
-
+    .wtitle {
+        padding: 125px 0px;
+    }
 }

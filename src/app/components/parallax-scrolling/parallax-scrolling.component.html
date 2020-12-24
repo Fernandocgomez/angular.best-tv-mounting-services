@@ -1,0 +1,8 @@
+<section *ngIf="parallaxScrollingData" [ngStyle]="parallaxScrollingData!.style">
+    <div class="container">
+        <div class="wtitle text-center text-white">
+            <h2 class="display-4 font-weight-500 text-capitalize" [innerHTML]="parallaxScrollingData!.heading"></h2>
+            <p class="lead" [innerHTML]="parallaxScrollingData!.subHeading"></p>
+        </div>
+    </div>
+</section>

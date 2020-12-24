@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppConfig } from './models/app-config.models';
+import { AppConfig } from './models/app-config.model';
 
 @Component({
   selector: 'app-root',

@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   // Public properties
   public logo: string = "../assets/static/logo.svg";
   public joinAsAPro: string = `Join as a pro &nbsp;&nbsp;<span><i class="fas fa-hard-hat"></i></span>`;
+  public navLink: string = "/join-as-a-pro";
 
   constructor() { }
 
