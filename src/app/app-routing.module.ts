@@ -6,9 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent },
-  // {path: "terms-of-use", component: },
-  // {path: "privacy-policy", component: },
-  // {path: "do-not-sell-my-info", component: },
+
 ];
 
 @NgModule({

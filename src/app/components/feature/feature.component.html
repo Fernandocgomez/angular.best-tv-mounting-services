@@ -1,12 +1,12 @@
-<div class="container-fluid pt-5 pb-5">
+<div class="container-fluid pt-5 pb-3" *ngIf="featureSectionData">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
-                <span class="separator" [innerHTML]="heading"></span>
+                <span class="separator" [innerHTML]="featureSectionData!.heading"></span>
             </div>
         </div>
-        <div class="row text-center pt-5 pb-5" *ngIf="featureSectionData">
-            <div class="col-md-4" *ngFor="let featureItem of featureSectionData;">
+        <div class="row text-center pt-5 pb-5" *ngIf="featureItemSectionData">
+            <div class="col-md-4" *ngFor="let featureItem of featureItemSectionData;">
                 <div class="col p-4">
                     <img [src]="featureItem.icon" [alt]="featureItem.alt || ''">
                 </div>

@@ -2,7 +2,34 @@
     "cSpell.words": [
         "codelyzer",
         "nbsp",
-        "playsinline"
+        "playsinline",
+        "wtitle"
+    ],
+    "cSpell.ignoreWords": [
+        "adipisicing",
+        "aliquid",
+        "amet",
+        "asperiores",
+        "aspernatur",
+        "consectetur",
+        "consequuntur",
+        "deserunt",
+        "doloribus",
+        "ducimus",
+        "elit",
+        "excepturi",
+        "facere",
+        "fuga",
+        "illo",
+        "iste",
+        "istockphoto",
+        "iusto",
+        "numquam",
+        "sint",
+        "sunt",
+        "veritatis",
+        "voluptate",
+        "voluptatem"
     ],
     
 }

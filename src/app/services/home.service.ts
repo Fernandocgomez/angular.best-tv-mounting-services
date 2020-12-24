@@ -1,63 +1,81 @@
 import { FeatureSection } from './../models/feature-section.model';
-import { HeroSection } from './../models/hero-section.model';
+// Angular modules
 import { Injectable } from '@angular/core';
+// Models
+import { HeroSection } from './../models/hero-section.model';
+import { FeatureItemSection } from '../models/feature-item-section.model';
+import { ParallaxScrollingSection } from './../models/parallax-scrolling-section.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HomeService {
 
-  public heroSection: HeroSection = new HeroSection(
+  private heroSection: HeroSection = new HeroSection(
     'Hire a top-rated tv mounting specialist',
     'Find the best deals and compare for free!',
     'Get Started',
-    'Top Best Texas Tv Mounting Contractors',
+    'Top Best Tv Mounting Contractors',
     true,
     "../../../assets/static/home/hero-section/video.mp4",
     undefined,
     "Zip Code"
   );
 
-  public featureSection: Array<FeatureSection> = [
-    new FeatureSection(
+  private featureItemSection: Array<FeatureItemSection> = [
+    new FeatureItemSection(
       "Find Top Contractors",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/find-top-contractors.svg",
       "Feature icon"
     ),
-    new FeatureSection(
+    new FeatureItemSection(
       "Compare Prices",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/compare-prices.svg",
       "Feature icon"
     ),
-    new FeatureSection(
+    new FeatureItemSection(
       "100% Free Quote",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/100-free-quote.svg",
       "Feature icon"
     ),
-    new FeatureSection(
+    new FeatureItemSection(
       "Quality",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/quality.svg",
       "Feature icon"
     ),
-    new FeatureSection(
+    new FeatureItemSection(
       "Pay Less",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/pay-less.svg",
       "Feature icon"
     ),
-    new FeatureSection(
+    new FeatureItemSection(
       "Feedback",
-      "Flat Screen LCD, LED, 3D, 4k UHD TV wall mounting of any size, by trained professionals, in a timely manner.",
+      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
       "../../../assets/static/home/feature-section/feedback.svg",
       "Feature icon"
     )
   ];
 
-  constructor() {}
+  private featureSection: FeatureSection = new FeatureSection("Lorem Ipsum");
+
+  private parallaxScrollingSection: ParallaxScrollingSection = new ParallaxScrollingSection(
+    "Lorem ipsum dolor sit", 
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi, consequuntur ex", 
+    {
+      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg.jpg')`,
+      backgroundAttachment: "fixed",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+    }
+  )
+
+  constructor() { }
 
   get heroSectionData() {
     return this.heroSection;
@@ -65,5 +83,13 @@ export class HomeService {
 
   get featureSectionData() {
     return this.featureSection;
+  }
+
+  get featureItemSectionData() {
+    return this.featureItemSection;
+  }
+
+  get parallaxScrollingData() {
+    return this.parallaxScrollingSection;
   }
 }

@@ -1,6 +1,7 @@
 // Angular module
 import { Component, Input, OnInit } from '@angular/core';
 // Model
+import { FeatureItemSection } from '../../models/feature-item-section.model';
 import { FeatureSection } from './../../models/feature-section.model';
 
 @Component({
@@ -12,8 +13,8 @@ export class FeatureComponent implements OnInit {
   // Private properties
 
   // Public properties
-  public heading: string = "Features";
-  @Input() public featureSectionData?: Array<FeatureSection>;
+  @Input() public featureSectionData?: FeatureSection;
+  @Input() public featureItemSectionData?: Array<FeatureItemSection>;
   
   constructor() { }
 
