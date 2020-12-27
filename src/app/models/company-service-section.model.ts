@@ -1,9 +1,7 @@
-export class CompanyServiceSection {
+export interface CompanyServiceSection {
     /**
      * Creates a CompanyServiceSection.
      * @param {string} heading - heading
     */
-    constructor(
-        public heading: string
-    ) { }
+    heading: string
 }

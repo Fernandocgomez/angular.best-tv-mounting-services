@@ -1,6 +1,5 @@
 // Angular module
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 // Models
 import { HeroSection } from './../../models/hero-section.model';
 
@@ -10,19 +9,8 @@ import { HeroSection } from './../../models/hero-section.model';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
-  // Private properties
-  private zipCodeRegExp: RegExp = /^\d{5}(?:[-\s]\d{4})?$/;
-  
   // Public properties
   @Input() public heroSectionData?: HeroSection;
-  
-  // Reactive forms
-  public form = new FormGroup({
-    zipCode: new FormControl('', [
-      Validators.required,
-      Validators.pattern(this.zipCodeRegExp),
-    ]),
-  });
 
   constructor() {}
 

@@ -1,4 +1,7 @@
-export class HeroSection {
+import { ZipCodeCta } from './zip-code-cta.model';
+import { NavBar } from './navbar.model';
+
+export interface HeroSection {
     /**
      * Creates a HeroSection.
      * @param {string} heading - Hero section heading.
@@ -7,11 +10,12 @@ export class HeroSection {
      * @param {string | undefined} video - Video URL or relative path - resolution 1280x720.
      * @param {string | undefined} picture - Picture URL or relative path - resolution 1920x1280.
     */
-    constructor(
-        public heading: string,
-        public subHeading: string,
-        public isVideo: boolean,
-        public video: string | undefined,
-        public picture: string | undefined,
-    ) { }
+
+    heading: string;
+    subHeading: string;
+    isVideo: boolean;
+    video?: string;
+    picture?: string;
+    navBar? : NavBar;
+    zipCodeCta?: ZipCodeCta;
 }

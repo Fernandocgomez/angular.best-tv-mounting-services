@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+// Angular module
+import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+// Model
+import { ZipCodeCta } from './../../models/zip-code-cta.model';
 
 @Component({
   selector: 'app-zip-code-cta',
@@ -11,12 +14,7 @@ export class ZipCodeCtaComponent implements OnInit {
   private zipCodeRegExp: RegExp = /^\d{5}(?:[-\s]\d{4})?$/;
   
   // Public properties
-  public zipCodeCtaData = {
-    zipCodePlaceHolder: "Zip Code",
-    ctaBtn: "Get Started", 
-    inputDisclaimer: "Top Best Tv Mounting Contractors",
-    route: "/lead/tv-mounting/get-started"
-  }
+  @Input() public zipCodeCtaData?: ZipCodeCta;
   
   // Reactive forms
   public form = new FormGroup({

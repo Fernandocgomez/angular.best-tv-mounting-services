@@ -7,8 +7,6 @@ import { ParallaxScrollingSection } from './parallax-scrolling-section.model';
 
 export interface HomePage {
     heroSection: HeroSection;
-        // Navbar
-        // zip code cta
     featureSection: FeatureSection;
     featureItemSection: Array<FeatureItemSection>;
     parallaxScrollingSection: ParallaxScrollingSection;
