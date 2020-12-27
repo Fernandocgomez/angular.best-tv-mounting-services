@@ -1,4 +1,6 @@
+// Angular modules
 import { Component } from '@angular/core';
+// Models
 import { AppConfig } from './models/app-config.model';
 
 @Component({

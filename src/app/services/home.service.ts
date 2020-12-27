@@ -7,6 +7,7 @@ import { CompanyServiceSection } from './../models/company-service-section.model
 import { HeroSection } from './../models/hero-section.model';
 import { FeatureItemSection } from '../models/feature-item-section.model';
 import { ParallaxScrollingSection } from './../models/parallax-scrolling-section.model';
+import { ParallaxScrollingWithCtaSection } from '../models/parallax-scrolling-with-cta-section.model';
 
 @Injectable({
   providedIn: 'root'
@@ -107,6 +108,21 @@ export class HomeService {
     }
   ];
 
+  private parallaxScrollingWithCtaSection: ParallaxScrollingWithCtaSection = {
+    heading: "Hire a top-rated tv mounting specialist",
+    subHeading: "Find the best deals and compare for free!",
+    style: {
+      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg.jpg')`,
+      backgroundPosition: "center",
+    },
+    zipCodeCta: {
+      zipCodePlaceHolder: "Zip Code", 
+      ctaBtnText: "Get Started",
+      inputDisclaimer: "Top Best Tv Mounting Contractors",
+      route: "/lead/tv-mounting/get-started"
+    }
+  };
+
   constructor() { }
 
   get heroSectionData() {
@@ -131,5 +147,9 @@ export class HomeService {
 
   get companyServiceItemSectionData() {
     return this.companyServiceItemSection;
+  }
+
+  get parallaxScrollingWithCtaSectionData() {
+    return this.parallaxScrollingWithCtaSection;
   }
 }
