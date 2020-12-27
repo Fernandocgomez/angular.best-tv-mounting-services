@@ -13,88 +13,98 @@ import { ParallaxScrollingSection } from './../models/parallax-scrolling-section
 })
 export class HomeService {
 
-  private heroSection: HeroSection = new HeroSection(
-    'Hire a top-rated tv mounting specialist',
-    'Find the best deals and compare for free!',
-    true,
-    "../../../assets/static/home/hero-section/video.mp4",
-    undefined
-  );
+  private heroSection: HeroSection = {
+    heading: 'Hire a top-rated tv mounting specialist',
+    subHeading: 'Find the best deals and compare for free!',
+    isVideo: true,
+    video: "../../../assets/static/home/hero-section/video.mp4",
+    navBar: {
+      logo: "../assets/static/logo.svg",
+      navLink: "/join-as-a-pro",
+      navLinkText: 'Join as a pro &nbsp;&nbsp;<span><i class="fas fa-hard-hat"></i></span>'
+    },
+    zipCodeCta: {
+      zipCodePlaceHolder: "Zip Code",
+      ctaBtnText: "Get Started", 
+      inputDisclaimer: "Top Best Tv Mounting Contractors",
+      route: "/lead/tv-mounting/get-started"
+    }
+  }
 
-  private featureSection: FeatureSection = new FeatureSection("Lorem Ipsum");
-  
+  private featureSection: FeatureSection = { heading: "Lorem Ipsum"}
+
   private featureItemSection: Array<FeatureItemSection> = [
-    new FeatureItemSection(
-      "Find Top Contractors",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/find-top-contractors.svg",
-      "Feature icon"
-    ),
-    new FeatureItemSection(
-      "Compare Prices",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/compare-prices.svg",
-      "Feature icon"
-    ),
-    new FeatureItemSection(
-      "100% Free Quote",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/100-free-quote.svg",
-      "Feature icon"
-    ),
-    new FeatureItemSection(
-      "Quality",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/quality.svg",
-      "Feature icon"
-    ),
-    new FeatureItemSection(
-      "Pay Less",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/pay-less.svg",
-      "Feature icon"
-    ),
-    new FeatureItemSection(
-      "Feedback",
-      "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
-      "../../../assets/static/home/feature-section/feedback.svg",
-      "Feature icon"
-    )
+    {
+      heading: "Find Top Contractors",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/find-top-contractors.svg",
+      alt: "Feature icon"
+    },
+    {
+      heading: "Compare Prices",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/compare-prices.svg",
+      alt: "Feature icon"
+    },
+    {
+      heading: "100% Free Quote",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/100-free-quote.svg",
+      alt: "Feature icon"
+    },
+    {
+      heading: "Quality",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/quality.svg",
+      alt: "Feature icon"
+    },
+    {
+      heading: "Pay Less",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/pay-less.svg",
+      alt: "Feature icon"
+    },
+    {
+      heading: "Feedback",
+      subHeading: "asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi",
+      icon: "../../../assets/static/home/feature-section/feedback.svg",
+      alt: "Feature icon"
+    }
   ];
 
-  private parallaxScrollingSection: ParallaxScrollingSection = new ParallaxScrollingSection(
-    "Sit back and relax while we do all the work", 
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi, consequuntur ex", 
-    {
+  private parallaxScrollingSection: ParallaxScrollingSection = {
+    heading: "Sit back and relax while we do all the work", 
+    subHeading: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, asperiores iste veritatis sint facere numquam aspernatur aliquid voluptate ducimus fuga, voluptatem minus iusto sunt quae doloribus deserunt excepturi, consequuntur ex", 
+    style: {
       background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg.jpg')`,
       backgroundPosition: "center",
     }
-  )
+  }
 
-  private companyServiceSection: CompanyServiceSection = new CompanyServiceSection("Other Services");
+  private companyServiceSection: CompanyServiceSection = {heading: "Other Services"};
 
   private companyServiceItemSection: Array<CompanyServiceItemSection> = [
-    new CompanyServiceItemSection(
-      "../../../assets/static/home/company-service-section/home-theater.jpg",
-      "Home Theater",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
-      "Learn More",
-      "#"
-    ),
-    new CompanyServiceItemSection(
-      "../../../assets/static/home/company-service-section/tv-dismount.jpg",
-      "TV Dismount Or Remount",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
-      "Learn More",
-      "#"
-    ),
-    new CompanyServiceItemSection(
-      "../../../assets/static/home/company-service-section/projector-installation.jpg",
-      "Projector Installation",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
-      "Learn More",
-      "#"
-    )
+    {
+      image: "../../../assets/static/home/company-service-section/home-theater.jpg",
+      cardTitle: "Home Theater",
+      cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
+      cardLinkText: "Learn More",
+      cardLinkHref: "#"
+    },
+    {
+      image: "../../../assets/static/home/company-service-section/tv-dismount.jpg",
+      cardTitle: "TV Dismount Or Remount",
+      cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
+      cardLinkText: "Learn More",
+      cardLinkHref: "#"
+    },
+    {
+      image: "../../../assets/static/home/company-service-section/projector-installation.jpg",
+      cardTitle: "Projector Installation",
+      cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloremque. Eligendi et suscipit similique sunt fugit debitis nostrum maxime tenetur. Vero minima laborum cupiditate aspernatur illo esse repellat qui odio.",
+      cardLinkText: "Learn More",
+      cardLinkHref: "#"
+    }
   ];
 
   constructor() { }

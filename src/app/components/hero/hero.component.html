@@ -1,7 +1,7 @@
 <header *ngIf="heroSectionData">
     <div class="overlay"></div>
     <video 
-        *ngIf="heroSectionData.isVideo; else heroPicture" 
+        *ngIf="heroSectionData!.isVideo; else heroPicture" 
         loop 
         muted 
         autoplay="autoplay" 
@@ -9,18 +9,18 @@
         oncanplay="this.play()" 
         onloadedmetadata="this.muted = true"
         >
-            <source [src]="heroSectionData.video" type="video/mp4">
+            <source [src]="heroSectionData!.video" type="video/mp4">
     </video>
     <ng-template #heroPicture>
-        <img [src]="heroSectionData.picture" alt="">
+        <img [src]="heroSectionData!.picture" alt="">
     </ng-template>
     <div class="container h-100">
-        <app-navbar></app-navbar>
+        <app-navbar [navBarData]="heroSectionData!.navBar"></app-navbar>
         <div class="d-flex h-100 text-center align-items-top pt-6">
             <div class="w-100 text-white">
-                <h1 class="display-3 font-weight-500 text-capitalize" [innerHTML]="heroSectionData.heading"></h1>
-                <p class="lead mb-3 text-capitalize" [innerHTML]="heroSectionData.subHeading"></p>
-                <app-zip-code-cta></app-zip-code-cta>
+                <h1 class="display-3 font-weight-500 text-capitalize" [innerHTML]="heroSectionData!.heading"></h1>
+                <p class="lead mb-3 text-capitalize" [innerHTML]="heroSectionData!.subHeading"></p>
+                <app-zip-code-cta [zipCodeCtaData]="heroSectionData!.zipCodeCta"></app-zip-code-cta>
             </div>
         </div>
     </div>

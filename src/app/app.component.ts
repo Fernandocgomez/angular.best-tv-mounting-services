@@ -7,8 +7,5 @@ import { AppConfig } from './models/app-config.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'best-tv-mounting-services';
-  constructor(private appConfig: AppConfig) {
-    console.log("fernando", this.appConfig.API_BASE_URL)
-  }
+  constructor(private appConfig: AppConfig) {}
 }

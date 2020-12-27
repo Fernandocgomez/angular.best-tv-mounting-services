@@ -1,4 +1,4 @@
-export class CompanyServiceItemSection {
+export interface CompanyServiceItemSection {
     /**
      * Creates a CompanyServiceItemSection.
      * @param {string} image - image src.
@@ -7,11 +7,9 @@ export class CompanyServiceItemSection {
      * @param {string} cardLinkText - call to action link text.
      * @param {string} cardLinkHref - call to action link route.
     */
-    constructor(
-        public image: string,
-        public cardTitle: string,
-        public cardText: string,
-        public cardLinkText: string,
-        public cardLinkHref: string,
-    ) { }
+    image: string;
+    cardTitle: string;
+    cardText: string;
+    cardLinkText: string;
+    cardLinkHref: string;
 }

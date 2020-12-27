@@ -1,13 +1,11 @@
-export class ParallaxScrollingSection {
+export interface ParallaxScrollingSection {
     /**
      * Creates a ParallaxScrollingSection.
      * @param {string} heading - Hero section heading.
      * @param {string} subHeading - Hero section sub heading.
-     * @param {string} bgImage - Background image.
+     * @param {object} style - Background image and center property.
     */
-    constructor(
-        public heading: string,
-        public subHeading: string,
-        public style: object
-    ) { }
+    heading: string;
+    subHeading: string;
+    style: object;
 }

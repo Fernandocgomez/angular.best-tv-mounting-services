@@ -1,9 +1,7 @@
-export class FeatureSection {
+export interface FeatureSection {
     /**
      * Creates a FeatureSection.
      * @param {string} heading - Main heading.
     */
-    constructor(
-        public heading: string
-    ) { }
+    heading: string
 }

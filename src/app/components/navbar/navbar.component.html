@@ -1,6 +1,6 @@
-<nav class="navbar navbar-light navbar-expand-lg">
+<nav class="navbar navbar-light navbar-expand-lg" *ngIf="navBarData">
   <div class="container">
-    <img class="navbar-brand" [src]="logo" />
+    <img class="navbar-brand" [src]="navBarData!.logo" />
     <button 
       class="navbar-toggler" 
       type="button" 
@@ -18,8 +18,8 @@
           <li class="nav-item">
             <a 
               class="nav-link text-white" 
-              [routerLink]="navLink"
-              [innerHTML]="joinAsAPro"></a>
+              [routerLink]="navBarData!.navLink"
+              [innerHTML]="navBarData!.navLinkText"></a>
           </li>
         </ul>
       </div>
