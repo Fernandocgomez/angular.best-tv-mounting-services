@@ -1,0 +1,11 @@
+<section *ngIf="parallaxScrollingWithCtaSectionData" [ngStyle]="parallaxScrollingWithCtaSectionData!.style">
+    <div class="container">
+        <div class="row">
+            <div class="col wtitle text-center text-white">
+                <h2 class="display-4 font-weight-500 text-capitalize" [innerHTML]="parallaxScrollingWithCtaSectionData!.heading"></h2>
+                <p class="lead" [innerHTML]="parallaxScrollingWithCtaSectionData!.subHeading"></p>
+                <app-zip-code-cta [zipCodeCtaData]="parallaxScrollingWithCtaSectionData!.zipCodeCta"></app-zip-code-cta>
+            </div>
+        </div>
+    </div>
+</section>

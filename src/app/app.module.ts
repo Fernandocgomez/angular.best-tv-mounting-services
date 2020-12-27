@@ -12,6 +12,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ParallaxScrollingComponent } from './components/parallax-scrolling/parallax-scrolling.component';
 import { FeatureComponent } from './components/feature/feature.component';
 import { CompanyServicesComponent } from './components/company-services/company-services.component';
+import { ParallaxScrollingWithCtaComponent } from './components/parallax-scrolling-with-cta/parallax-scrolling-with-cta.component';
 // Services
 import { ConfigService } from './services/config.service';
 import { HomeService } from './services/home.service';
@@ -35,6 +36,7 @@ export function initializerFn(configService: ConfigService) {
     ParallaxScrollingComponent,
     CompanyServicesComponent,
     ZipCodeCtaComponent,
+    ParallaxScrollingWithCtaComponent,
   ],
   imports: [
     BrowserModule,

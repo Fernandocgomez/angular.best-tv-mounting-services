@@ -1,0 +1,89 @@
+// Variable
+$primary: #008db8;
+$secondary: #262626;
+$secondary-darker: #007cba;
+$white: #ffffff;
+$text: #000;
+$darker-gary: #7d7d7d;
+
+.wtitle {
+    padding: 200px 20px;
+}
+
+section {
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.wtitle {
+    padding: 150px 20px;
+}
+
+// **********MEDIA QUERIES***********
+
+// All mobile devices
+@media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
+    .wtitle {
+        height: 100vh;
+    }
+
+    section {
+        background-attachment: scroll !important;
+    }
+}
+
+
+// Galaxy fold
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+}
+// IPhone 5/SE
+@media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
+}
+
+// Galaxy S5 & Motorola G4
+@media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
+}
+
+// IPhone 6/7/8 & IPhone X
+@media only screen and (min-device-width: 375px) and (max-device-width: 410px) {
+}
+
+// IPhone X
+@media only screen and (min-device-height: 812px) and (max-device-height: 812px) {
+}
+
+// Pixel 2 & Pixel 2XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 413px) {
+}
+
+// Pixel 2XL
+@media only screen and (min-device-height: 823px) and (max-device-height: 823px) {
+}
+
+// IPhone 6/7/8 Plus
+@media only screen and (min-device-width: 414px) and (max-device-width: 539px) {
+}
+
+// Surface Duo
+@media only screen and (min-device-width: 540px) and (max-device-width: 767px) {
+}
+
+// All tablet devices
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .wtitle {
+        padding: 125px 0px;
+    }
+
+    section {
+        background-attachment: scroll !important;
+    }
+}
+
+// IPad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+}
+
+// IPad pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
+}

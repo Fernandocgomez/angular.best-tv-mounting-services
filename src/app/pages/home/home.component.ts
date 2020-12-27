@@ -9,6 +9,7 @@ import { ParallaxScrollingSection } from './../../models/parallax-scrolling-sect
 import { FeatureItemSection } from '../../models/feature-item-section.model';
 import { FeatureSection } from './../../models/feature-section.model';
 import { HeroSection } from './../../models/hero-section.model';
+import { ParallaxScrollingWithCtaSection } from 'src/app/models/parallax-scrolling-with-cta-section.model';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
   public parallaxScrollingData?: ParallaxScrollingSection;
   public companyServiceSectionData?: CompanyServiceSection;
   public companyServiceItemSectionData?: Array<CompanyServiceItemSection>;
+  public parallaxScrollingWithCtaSectionData?: ParallaxScrollingWithCtaSection;
 
   constructor(private homeService: HomeService) { }
 
@@ -36,6 +38,7 @@ export class HomeComponent implements OnInit {
     this.parallaxScrollingData = this.homeService.parallaxScrollingData;
     this.companyServiceSectionData = this.homeService.companyServiceSectionData;
     this.companyServiceItemSectionData = this.homeService.companyServiceItemSectionData;
+    this.parallaxScrollingWithCtaSectionData = this.homeService.parallaxScrollingWithCtaSectionData;
   }
 
   // Private methods
