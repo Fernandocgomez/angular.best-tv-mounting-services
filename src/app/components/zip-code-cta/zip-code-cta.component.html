@@ -1,0 +1,31 @@
+<form class="input-group mb-3 w-50 mx-auto" name="form" [formGroup]="form">
+    <div class="input-group-prepend d-flex">
+        <span 
+            class="input-group-text" 
+            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }">
+                <i class="fas fa-map-marker-alt"></i>
+        </span>
+    </div>
+    <input 
+        type="text" 
+        class="form-control shadow-none" 
+        [placeholder]="zipCodeCtaData.zipCodePlaceHolder"
+        formControlName="zipCode"
+        [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
+    >
+    <div class="input-group-append">
+        <button 
+            class="btn shadow-none" 
+            type="button"
+            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
+            [disabled]="form.get('zipCode')!.invalid"
+            [innerHTML]="zipCodeCtaData.ctaBtn"
+            >
+        </button>
+    </div>
+    <div 
+        class="form-text text-white text-start container text-capitalize" 
+        *ngIf="zipCodeCtaData.inputDisclaimer" 
+        [innerHTML]="zipCodeCtaData.inputDisclaimer">
+    </div>
+</form>

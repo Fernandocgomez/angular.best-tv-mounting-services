@@ -19,38 +19,8 @@
         <div class="d-flex h-100 text-center align-items-top pt-6">
             <div class="w-100 text-white">
                 <h1 class="display-3 font-weight-500 text-capitalize" [innerHTML]="heroSectionData.heading"></h1>
-                <p class="lead mb-3 text-capitalize" [innerHTML]="heroSectionData.subHeading"></p>    
-                <form class="input-group mb-3 w-50 mx-auto" name="form" [formGroup]="form">
-                    <div class="input-group-prepend d-flex">
-                        <span 
-                            class="input-group-text" 
-                            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }">
-                                <i class="fas fa-map-marker-alt"></i>
-                        </span>
-                    </div>
-                    <input 
-                        type="text" 
-                        class="form-control shadow-none" 
-                        [placeholder]="heroSectionData.zipCodePlaceHolder"
-                        formControlName="zipCode"
-                        [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
-                    >
-                    <div class="input-group-append">
-                        <button 
-                            class="btn shadow-none" 
-                            type="button"
-                            [ngClass]="{'is-invalid': form.get('zipCode')!.touched && form.get('zipCode')!.invalid }"
-                            [disabled]="form.get('zipCode')!.invalid"
-                            [innerHTML]="heroSectionData.ctaBtn"
-                            >
-                        </button>
-                    </div>
-                    <div 
-                        class="form-text text-white text-start container text-capitalize" 
-                        *ngIf="heroSectionData.inputDisclaimer" 
-                        [innerHTML]="heroSectionData.inputDisclaimer">
-                    </div>
-                </form>  
+                <p class="lead mb-3 text-capitalize" [innerHTML]="heroSectionData.subHeading"></p>
+                <app-zip-code-cta></app-zip-code-cta>
             </div>
         </div>
     </div>

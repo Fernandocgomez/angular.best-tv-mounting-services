@@ -16,14 +16,13 @@ export class HomeService {
   private heroSection: HeroSection = new HeroSection(
     'Hire a top-rated tv mounting specialist',
     'Find the best deals and compare for free!',
-    'Get Started',
-    'Top Best Tv Mounting Contractors',
     true,
     "../../../assets/static/home/hero-section/video.mp4",
-    undefined,
-    "Zip Code"
+    undefined
   );
 
+  private featureSection: FeatureSection = new FeatureSection("Lorem Ipsum");
+  
   private featureItemSection: Array<FeatureItemSection> = [
     new FeatureItemSection(
       "Find Top Contractors",
@@ -62,8 +61,6 @@ export class HomeService {
       "Feature icon"
     )
   ];
-
-  private featureSection: FeatureSection = new FeatureSection("Lorem Ipsum");
 
   private parallaxScrollingSection: ParallaxScrollingSection = new ParallaxScrollingSection(
     "Sit back and relax while we do all the work", 
