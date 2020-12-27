@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 // Services
 import { HomeService } from './../../services/home.service';
 // Models
+import { CompanyServiceSection } from './../../models/company-service-section.model';
+import { CompanyServiceItemSection } from './../../models/company-service-item-section.model';
 import { ParallaxScrollingSection } from './../../models/parallax-scrolling-section.model';
 import { FeatureItemSection } from '../../models/feature-item-section.model';
 import { FeatureSection } from './../../models/feature-section.model';
@@ -21,6 +23,8 @@ export class HomeComponent implements OnInit {
   public featureItemSectionData?: Array<FeatureItemSection>;
   public featureSectionData?: FeatureSection;
   public parallaxScrollingData?: ParallaxScrollingSection;
+  public companyServiceSectionData?: CompanyServiceSection;
+  public companyServiceItemSectionData?: Array<CompanyServiceItemSection>;
 
   constructor(private homeService: HomeService) { }
 
@@ -30,6 +34,8 @@ export class HomeComponent implements OnInit {
     this.featureSectionData = this.homeService.featureSectionData;
     this.featureItemSectionData = this.homeService.featureItemSectionData;
     this.parallaxScrollingData = this.homeService.parallaxScrollingData;
+    this.companyServiceSectionData = this.homeService.companyServiceSectionData;
+    this.companyServiceItemSectionData = this.homeService.companyServiceItemSectionData;
   }
 
   // Private methods

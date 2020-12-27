@@ -1,0 +1,25 @@
+<section class="container-fluid pt-5 pb-5" *ngIf="companyServiceSectionData">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 lead text-capitalize">
+                <span class="separator" [innerHTML]="companyServiceSectionData!.heading"></span>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-5 pt-5 pb-5" *ngIf="companyServiceItemSectionData">
+
+            <div class="col" *ngFor="let companyServiceItem of companyServiceItemSectionData!;">
+              <div class="card h-100 cs_card shadow">
+                <img [src]="companyServiceItem.image" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize" [innerHTML]="companyServiceItem.cardTitle"></h5>
+                  <p class="card-text" [innerHTML]="companyServiceItem.cardText"></p>
+                  <a [routerLink]="companyServiceItem.cardLinkHref" class="card-link" [innerHTML]="companyServiceItem.cardLinkText"></a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

@@ -9,13 +9,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { ParallaxScrollingComponent } from './components/parallax-scrolling/parallax-scrolling.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { CompanyServicesComponent } from './components/company-services/company-services.component';
 // Services
 import { ConfigService } from './services/config.service';
 import { HomeService } from './services/home.service';
 // Models
 import { AppConfig } from './models/app-config.model';
-import { FeatureComponent } from './components/feature/feature.component';
-import { ParallaxScrollingComponent } from './components/parallax-scrolling/parallax-scrolling.component';
 
 export function initializerFn(configService: ConfigService) {
   return () => {
@@ -30,7 +31,8 @@ export function initializerFn(configService: ConfigService) {
     HomeComponent,
     HeroComponent,
     FeatureComponent,
-    ParallaxScrollingComponent
+    ParallaxScrollingComponent,
+    CompanyServicesComponent,
   ],
   imports: [
     BrowserModule,
