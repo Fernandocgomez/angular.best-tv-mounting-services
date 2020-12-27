@@ -17,6 +17,7 @@ import { ConfigService } from './services/config.service';
 import { HomeService } from './services/home.service';
 // Models
 import { AppConfig } from './models/app-config.model';
+import { ZipCodeCtaComponent } from './components/zip-code-cta/zip-code-cta.component';
 
 export function initializerFn(configService: ConfigService) {
   return () => {
@@ -33,6 +34,7 @@ export function initializerFn(configService: ConfigService) {
     FeatureComponent,
     ParallaxScrollingComponent,
     CompanyServicesComponent,
+    ZipCodeCtaComponent,
   ],
   imports: [
     BrowserModule,

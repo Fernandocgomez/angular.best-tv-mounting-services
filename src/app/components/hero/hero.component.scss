@@ -46,52 +46,6 @@ header {
   }
 }
 
-.input-group {
-  button {
-    background-color: $primary;
-    color: $white;
-    border-radius: 0px 2rem 2rem 0;
-    height: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-weight: bold;
-
-    &:hover {
-      background-color: $secondary-darker;
-      color: $white;
-    }
-  }
-
-  input {
-    height: 4rem;
-    border-radius: 2rem;
-    border-left: none;
-    border-right: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .input-group-text {
-    background-color: $white;
-    border-radius: 2rem 0 0 2rem;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-}
-
-.form-text {
-  padding-left: 2rem;
-}
-
-.is-invalid {
-  border-color: #dc3545;
-  border-left: none;
-}
-
-.btn:disabled {
-  opacity: 1;
-}
-
 // **********MEDIA QUERIES***********
 
 // Galaxy fold
@@ -116,18 +70,6 @@ header {
     opacity: 0 !important;
   }
 
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  .form-text {
-    font-size: small ;
-  }
 }
 // IPhone 5/SE
 @media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
@@ -151,22 +93,9 @@ header {
     opacity: 0 !important;
   }
 
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
-  }
-
   .display-3 {
     font-size: calc(1.525rem + 2.3vw) !important;
   }
-
-  .form-text {
-    font-size: small !important;
-  }
-
 }
 
 // Galaxy S5 & Motorola G4
@@ -189,14 +118,6 @@ header {
 
   .overlay {
     opacity: 0 !important;
-  }
-
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
   }
 }
 
@@ -221,14 +142,6 @@ header {
   .overlay {
     opacity: 0 !important;
   }
-
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
-  }
 }
 
 // IPhone X 
@@ -243,8 +156,6 @@ header {
     min-height: 50% !important;
     width: 0% !important;
   }
-
-
 }
 
 // Pixel 2 & Pixel 2XL
@@ -268,14 +179,6 @@ header {
   .overlay {
     opacity: 0 !important;
   }
-
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
-  }
 }
 
 // Pixel 2XL
@@ -287,7 +190,6 @@ header {
   img {
     top: 16% !important;
   }
-
 }
 
 // IPhone 6/7/8 Plus
@@ -310,14 +212,6 @@ header {
 
   .overlay {
     opacity: 0 !important;
-  }
-
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
   }
 }
 
@@ -342,14 +236,6 @@ header {
   .overlay {
     opacity: 0 !important;
   }
-
-  form {
-    width: 100% !important;
-  }
-
-  button {
-    padding-left: 2rem !important;
-  }
 }
 
 // IPad 
@@ -358,25 +244,12 @@ header {
     padding-top: 11rem !important;
   }
 
-  form {
-    width: 70% !important;
-  }
-
   .display-3 {
     font-size: calc(1.525rem + 2.3vw);
   }
 
   .lead {
     font-size: 1.5rem;
-  }
-
-  input {
-    padding-left: 6px !important;
-  }
-
-  .form-text {
-    font-size: medium;
-    padding-left: 3rem;
   }
 
   video {
@@ -391,24 +264,11 @@ header {
     padding-top: 15rem !important;
   }
 
-  form {
-    width: 70% !important;
-  }
-
   .display-3 {
     font-size: calc(1.525rem + 3.3vw) !important;
   }
 
   .lead {
     font-size: 2rem;
-  }
-
-  input {
-    padding-left: 6px !important;
-  }
-
-  .form-text {
-    font-size: larger;
-    padding-left: 3rem;
   }
 }
