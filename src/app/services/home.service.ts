@@ -112,7 +112,7 @@ export class HomeService {
     heading: "Hire a top-rated tv mounting specialist",
     subHeading: "Find the best deals and compare for free!",
     style: {
-      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-section/bg.jpg')`,
+      background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/static/home/parallax-with-cta/bg.jpg')`,
       backgroundPosition: "center",
     },
     zipCodeCta: {
